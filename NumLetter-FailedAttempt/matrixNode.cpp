@@ -117,7 +117,7 @@ int matrixNode::calculateTransform(int X, int Y, int XTrans, int YTrans)
     }
     else if (XTrans == matrix.rows)
     {
-        X = matrix.rows - X;
+        X = matrix.rows - X - 1;
     }
     else
     {
@@ -132,7 +132,7 @@ int matrixNode::calculateTransform(int X, int Y, int XTrans, int YTrans)
     }
     else if (YTrans == matrix.columns)
     {
-        Y = matrix.columns - Y;
+        Y = matrix.columns - Y - 1;
     }
     else
     {
